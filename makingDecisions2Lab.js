@@ -7,14 +7,17 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-
+let firstItem = arr[0]
+// console.log(firstItem)
 
 ////////// PROBLEM 2 //////////
 /*
-  Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
+Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
 */
 
 //Code Here
+let lastItemRemoved = arr.pop()
+console.log(arr)
 
 ////////// PROBLEM 3 //////////
 
@@ -27,7 +30,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for (i= 0; i < family.length; i++){
+  console.log(family[i])
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -42,8 +47,13 @@ let evensArr = []
 */
 
 //Code Here
-
-
+ 
+  for (i = 0; i < nums.length; i ++){
+    if (nums[i] % 2 === 0) {
+      evensArr.push(nums[i])
+    }
+  }
+console.log(evensArr)
 
 ////////// PROBLEM 5 //////////
 
@@ -56,7 +66,17 @@ var score = 74
 */
 
 //Code Here
-
+if (score >= 90){
+  console.log("A")
+}else if (80 <= score && score <= 89) {
+  console.log("B")
+} else if (70 <= score && score <= 79) {
+  console.log("C")
+}else if(60 <= score && score <= 69) {
+  console.log("D")
+}else {
+  console.log("F in the chat")
+}
 
 ////////// Intermediate Problems //////////
 
